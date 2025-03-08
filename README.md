@@ -19,7 +19,7 @@ In order to fine tune our model, we need DATA. I used Stanford's Politeness Corp
   
   100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 872/872 [03:39<00:00, 4.22it/s]  
 
-We can see the loss decreasing (which is good!), but our eval loss stagnates. This is most likely due to the limited data set, as there is only around 1000 positive examples. As we get into RLHF, I will show more concrete examples of before and after our training. 
+We can see the loss decreasing (which is good!), but our eval loss stagnates. This is most likely due to the limited data set, as there is only around 1000 positive examples. As we get into RLHF, I will show more concrete examples of before and after our training. After fine tuning, heree's an question it asked: "Would you be willing to be the person who created it?" Clearly polite!
 
 # Step 2: Reinforcement Learning with Human Feedback!
   i. Train the BERT Model:
