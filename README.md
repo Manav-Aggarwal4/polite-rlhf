@@ -25,6 +25,7 @@ We can see the loss decreasing (which is good!), but our eval loss stagnates. Th
   i. Train the BERT Model:
       First, we need to train a BERT model on how to properly score our model's responses. It uses regression to output a single float "score", where the higher it is, the more polite. I trained it on around 5000         
       utterances from a annotated MIT dataset. Here are the results: 
+      
       {'loss': 0.04, 'grad_norm': 2.7226834297180176, 'learning_rate': 4.546279491833031e-05, 'epoch': 0.18}                                                           
       {'loss': 0.0256, 'grad_norm': 0.752590537071228, 'learning_rate': 4.092558983666062e-05, 'epoch': 0.36}                                                          
       {'loss': 0.0192, 'grad_norm': 1.339168906211853, 'learning_rate': 3.638838475499093e-05, 'epoch': 0.54}                                                          
@@ -38,5 +39,6 @@ We can see the loss decreasing (which is good!), but our eval loss stagnates. Th
       {'loss': 0.0069, 'grad_norm': 0.3205867409706116, 'learning_rate': 4.627949183303086e-06, 'epoch': 1.81}                                                         
       {'loss': 0.0066, 'grad_norm': 0.4753980040550232, 'learning_rate': 9.074410163339383e-08, 'epoch': 2.0}                                                          
       {'eval_loss': 0.0069235265254974365, 'eval_runtime': 8.3446, 'eval_samples_per_second': 58.601, 'eval_steps_per_second': 7.43, 'epoch': 2.0} 
+      
       Again, the loss has consistenly decreased. Progress!
       
