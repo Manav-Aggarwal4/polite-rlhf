@@ -40,4 +40,6 @@ We can see the loss decreasing (which is good!), but our eval loss stagnates. Th
     {'eval_loss': 0.0069235265254974365, 'eval_runtime': 8.3446, 'eval_samples_per_second': 58.601, 'eval_steps_per_second': 7.43, 'epoch': 2.0} 
       
   Again, the loss has consistenly decreased. Progress!
+
+  ii. Next, we must use the reward (BERT) model to train the policy model (fine-tuned GPT-2). We will accomplish this through Proximal Policy Optimization (PPO). Through this          process, the LLM will continually learn how to be more polite via the reward model's score/rating of its response to diverse prompts that I created via synthetic data.
       
